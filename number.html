@@ -1,32 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>作業表單</title>
-    
-</head>
-<body>
+<canvas id="myCanvas" width="400" height="250" style="border:1px solid #d3d3d3;"></canvas>
 
-    <form>
-            <label for="firstName">First name:</label><br>
-            <input type="text" id="firstName" name="firstName" value="Your first name">
-            
-            <br>
-       
-            <label for="lastName">Last name:</label><br>
-            <input type="text" id="lastName" name="lastName" value="Your last name">
-            
-            <br>
-            
-            <label for="studentID">Student ID:</label><br>
-            <input type="text" id="studentID" name="studentID" value="Your student ID">
+<script>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
 
-        <br>
-
-        <input type="submit" value="Submit">
-
-        <input type="reset" value="重設">
-    </form>
-
-</body>
-</html>
+  ctx.fillStyle = "blue";
+  ctx.fillRect(20, 20, 150, 150); 
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = "black";
+  ctx.strokeRect(20, 20, 150, 150); 
+  
+  ctx.beginPath();
+  ctx.arc(180, 95, 60, 0, 2 * Math.PI); 
+  ctx.fillStyle = "yellow";
+  ctx.fill(); 
+  ctx.strokeStyle = "red";
+  ctx.stroke(); 
+</script>
