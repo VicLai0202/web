@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5bb0ff;
+  padding: 20px;
+  margin: 0;
+}
+
+.content-wrapper {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  background-color: #a9d150;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.mid-col {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.mid-box {
+  background-color: #00bcd4;
+  height: 100px;
+}
+
+.foot-col {
+  float: left;
+  width: 25%; 
+  padding: 5px;
+}
+
+.foot-box {
+  background-color: #f2f2f2;
+  height: 60px;
+}
+
+@media screen and (max-width: 479px) {
+  .mid-col {
+    width: 100%; 
+  }
+
+  .foot-col {
+    width: 50%; 
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="content-wrapper">
+  <div class="header"></div>
+
+  <div class="row">
+    <div class="mid-col"><div class="mid-box"></div></div>
+    <div class="mid-col"><div class="mid-box"></div></div>
+    <div class="mid-col"><div class="mid-box"></div></div>
+  </div>
+
+  <div class="row">
+    <div class="foot-col"><div class="foot-box"></div></div>
+    <div class="foot-col"><div class="foot-box"></div></div>
+    <div class="foot-col"><div class="foot-box"></div></div>
+    <div class="foot-col"><div class="foot-box"></div></div>
+  </div>
+</div>
+
+</body>
+</html>
