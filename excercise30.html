@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1 id="demo">Hello</h1>
+
+  <button type="button" 
+    onmouseover="changeColor()" 
+    onclick="changeText()">
+    Button
+  </button>
+
+  <script>
+    
+    function changeColor() {
+      document.getElementById("demo").style.color = "magenta";
+    }
+
+    function changeText() {
+      document.getElementById("demo").innerHTML = "Mouse Click";
+      document.getElementById("demo").style.color = "magenta";
+    }
+  </script>
+
+</body>
+</html>
