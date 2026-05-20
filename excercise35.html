@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <hr>
+
+    <h3>Original properties：</h3>
+    <pre id="properties-list"></pre>
+
+    <h3>After deleting the property 'age':</h3>
+    <pre id="object-result"></pre>
+
+    <script>
+        var Person = {
+            firstName: "Tony",
+            lastName: "Lee",
+            age: 50,
+            eyeColor: "Blue"
+        };
+
+        var allProperties = Object.keys(Person).join(", ");
+        document.getElementById("properties-list").textContent = allProperties;
+
+        delete Person.age;
+
+        document.getElementById("object-result").textContent = JSON.stringify(Person, null, 4);
+    </script>
+
+</body>
+</html>
